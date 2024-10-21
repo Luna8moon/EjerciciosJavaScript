@@ -1001,13 +1001,13 @@ const data = [
     {"song_title":"Dr","artist_name":"Anita Nyssen","genre":"Rock","release_date":"9/7/2012","price":13.11,"rating":2,"album_title":"Mrs","duration":9,"sales_count":91494,"featured":true},
 ]
 
-
+//Sacar los valores únicos que existen de titulos de album ( album_title )
 
 // Array vacio para almacenar los títulos de álbum que sean únicos.
 const albumsUnicos = [];
 
 for (let i = 0; i < data.length; i++) {
-  const album = titulosAlbums[i];
+  const album = album_title[i];
 
   // Verificar si el título ya está en el array de álbumes únicos
   if (!albumsUnicos.includes(album)) {
