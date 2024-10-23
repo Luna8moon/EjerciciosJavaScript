@@ -1003,18 +1003,13 @@ const data = [
 //Sacar nombre de canciones que han sido publicadas en 2011 (release_date)
 
 
-const songs2011 = [];
+let songs2011 = [];
 
 for (let i = 0; i < data.length; i++) {
     if (data[i].release_date.includes("2011")) {
         songs2011.push(data[i]);
     }
-    for (let i = 0; i < data.length; i++) {
-        if (data[i].release_date.includes("2018")) {
-            songs2018.push(data[i]);
-        }
-    }
+
 }
 
 console.log(songs2011);
-console.log(songs2018);
